@@ -13,7 +13,66 @@
     
 </head>
 <body>
-    
+    <div class="container">
+        <div class="page-header">
+            <h1>Train Schedules<small>A Directy of Train Times</small></h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel-default">
+                    <table class="table-hover" id="table">
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (minutes)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                            <th>Remove</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel-default">
+                    <div class="heading">
+                        <h3 class="panel-title">
+                            Add Train
+                        </h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <form id="my-form"></form>
+                            <div class="form-group">
+                                <label for="name">Train Name</label>
+                                <input class="form-cotrol" id="name" type="text" placeholder="ex...Swayze Express">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="role">Train Destination</label>
+                                <input class="form-cotrol" id="name" type="text" placeholder="ex...Little Rock">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="start-date">Train Arrival (HH:MM) Military Time</label>
+                                <input class="form-cotrol" id="name" type="text" placeholder="ex...13:25 for 1:25pm">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Frequency">Frequency (in minutes)</label>
+                                <input class="form-cotrol" id="name" type="text" placeholder="ex...12">
+                            </div>
+
+                            <button class="btn btn-primary" id="submit-train" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--JavaScript-->
     <!--jQuery , Popper.js, Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
