@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="page-header">
-            <h1>Train Schedules<small>A Directy of Train Times</small></h1>
+            <h1>Train Schedules<small> A Directory of Train Times</small></h1>
         </div>
         
         <div class="row">
@@ -73,6 +73,28 @@
             </div>
         </div>
     </div>
+    <!--Firebase-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDo0XfpVHctEv9A38T5OGEIK-aFPGHPT68",
+        authDomain: "train-scheduler-ba6c4.firebaseapp.com",
+        databaseURL: "https://train-scheduler-ba6c4.firebaseio.com",
+        projectId: "train-scheduler-ba6c4",
+        storageBucket: "",
+        messagingSenderId: "881794318336",
+        appId: "1:881794318336:web:631d8ded14e539d523d8e5"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+        
     <!--JavaScript-->
     <!--jQuery , Popper.js, Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

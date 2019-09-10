@@ -1,10 +1,46 @@
+body, html {
+    background-image: url("https://media.kasperskydaily.com/wp-content/uploads/sites/92/2015/12/06023356/train-hack-featured-1.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+}
+
 .container {
-background-color: blue;
+background-color: #484f4f;
+margin-top: 30px;
 }
 
 .page-header {
-    background-color: pink;
+    background-color: pink; 
 }
+
 .row {
     background-color: red;
+    padding: 5px;
+}
+
+.col-lg-12 {
+    background-color: whitesmoke;
+    
+}
+
+.panel-default {
+    background-color: blue;
+}
+
+.table-hover {
+    background-color: green;
+    
+}
+
+.heading {
+    background-color: #484f4f;
+}
+
+.panel-body {
+    background-color: #484f4f;
+}
+
+.form-group {
+    background-color: #484f4f;
 }
