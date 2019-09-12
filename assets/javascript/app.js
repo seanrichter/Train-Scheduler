@@ -4,10 +4,11 @@ apiKey: "AIzaSyDo0XfpVHctEv9A38T5OGEIK-aFPGHPT68",
 authDomain: "train-scheduler-ba6c4.firebaseapp.com",
 databaseURL: "https://train-scheduler-ba6c4.firebaseio.com",
 projectId: "train-scheduler-ba6c4",
-
+storageBucket: "",
 messagingSenderId: "881794318336",
 appId: "1:881794318336:web:631d8ded14e539d523d8e5"
 };
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -66,7 +67,7 @@ $("#submit-train").on("click", function(){
 
     // after submit set the value of each input field to an empty string
    
-   $("#name").val(" ");
+    $("#name").val(" ");
     $("#destination").val(" ");
     $("#first-train").val(" ");
     $("#frequency").val(" ");
