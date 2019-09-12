@@ -9,10 +9,6 @@ body, html {
 margin-top: 30px;
 }
 
-.page-header {
-    
-}
-
 .row {
     margin-bottom: 15px;
     line-height: 25px;
@@ -28,26 +24,4 @@ margin-top: 30px;
     margin-bottom: 10px;
     text-align: left;
     font-family: 'Acme', sans-serif;
-
-}
-
-.panel-default {
-    
-}
-
-.table-hover {
-    
-    
-}
-
-.heading {
-    
-}
-
-.panel-body {
-    
-}
-
-.form-group {
-    
 }
