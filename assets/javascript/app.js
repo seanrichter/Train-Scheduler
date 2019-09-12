@@ -42,7 +42,6 @@ $("#submit-train").on("click", function(){
     // // current time
     var currentTime = moment().format();
 
-    // Depreciation warning from Moment happening HERE (not sure how to fix):
     // Difference between the times
     var diffTime = moment().diff(firstTimeConverted, "minutes");
 
