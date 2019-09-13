@@ -1,5 +1,6 @@
+console.log("hello world");
 // Your web app's Firebase configuration
-var firebaseConfig = {
+var config = {
 apiKey: "AIzaSyDo0XfpVHctEv9A38T5OGEIK-aFPGHPT68",
 authDomain: "train-scheduler-ba6c4.firebaseapp.com",
 databaseURL: "https://train-scheduler-ba6c4.firebaseio.com",
@@ -10,7 +11,7 @@ appId: "1:881794318336:web:631d8ded14e539d523d8e5"
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config);
 
 // Database
 var database = firebase.database();
