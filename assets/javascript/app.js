@@ -13,6 +13,9 @@ appId: "1:881794318336:web:631d8ded14e539d523d8e5"
 // Initialize Firebase
 firebase.initializeApp(config);
 
+var firebase = require('firebase/app');
+require('firebase/auth');
+require('firebase/database');
 // Database
 var database = firebase.database();
 
@@ -56,7 +59,7 @@ $("#submit-train").on("click", function(){
     var nextTrain = moment().add(tMinutesTillTrain, "minutes").format("hh:mm");
 
     // Pushing values to the firebase database
-    database.ref().push({
+    database.ref().set({
       name: trainName,
       city: destination,
       rate: tFrequency,
