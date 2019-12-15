@@ -1,84 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--CSS style and reset--> 
+    <!--CSS style and reset-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Train Schedule</title>
-    <!--JQuery-->  
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <!--Firebase-->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
 </head>
+
 <body>
-<div class="container">
-    <div class="page-header">
-    <h1>Train Schedule<small> - A Directory of Train Times</small></h1>
-    </div>
-        
-    <div class= "row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
-                <table class="table table-hover" id="table">
-                    <tr>
-                        <th>Train Name</th>
-                        <th>Destination</th>
-                        <th>Frequency (Minutes)</th>
-                        <th>Next Arrival</th>
-                        <th>Minutes Away</th>
-                        <th>
-                            <button class="btn btn-primary" id="submit-train" type="submit">Remove</button>
-                        </th>
-                    </tr>
-                </table>
-            </div>
+    <div class="container">
+        <div class="page-header">
+            <h1>Train Schedule<small> - A Directory of Train Times</small></h1>
         </div>
-    </div>
-    <div class= "row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        Add Train
-                    </h3>
-                </div>
 
-            <div class="panel-body">
-                <form id="my-form">
-                    <div class="form-group">
-                        <label for="name">Train Name</label>
-                        <input class="form-control" id="name" type="text" placeholder="Swayze Express">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="role">Destination</label>
-                        <input class="form-control" id="destination" type="text" placeholder="City">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="start-date">First Train Time (HH:MM Military Time)</label>
-                        <input class="form-control" id="first-train" type="text" placeholder="16:30">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="frequency">Frequency (in Minutes)</label>
-                        <input class="form-control" id="frequency" type="number" placeholder="8">
-                    </div>
-                        <button class="btn btn-primary" id="submit-train" type="submit">Submit</button>
-                </form>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <table class="table table-hover" id="table">
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (Minutes)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                            <th>
+                                <button class="btn btn-primary" id="submit-train" type="submit">Remove</button>
+                            </th>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Add Train
+                        </h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <form id="my-form">
+                            <div class="form-group">
+                                <label for="name">Train Name</label>
+                                <input class="form-control" id="name" type="text" placeholder="Swayze Express">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="role">Destination</label>
+                                <input class="form-control" id="destination" type="text" placeholder="City">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="start-date">First Train Time (HH:MM Military Time)</label>
+                                <input class="form-control" id="first-train" type="text" placeholder="16:30">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="frequency">Frequency (in Minutes)</label>
+                                <input class="form-control" id="frequency" type="number" placeholder="8">
+                            </div>
+                            <button class="btn btn-primary" id="submit-train" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<!--JS Moment-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
-<script src="assets/javascript/app.js"></script>
+    <!--JS Moment-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+        integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
