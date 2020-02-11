@@ -1,27 +1,28 @@
-body, html {
-    background-image: url("https://media.kasperskydaily.com/wp-content/uploads/sites/92/2015/12/06023356/train-hack-featured-1.jpg");
-    background-repeat: no-repeat;
-    height: 100%;
-    background-size: cover;
+body,
+html {
+  background-image: url("https://media.kasperskydaily.com/wp-content/uploads/sites/92/2015/12/06023356/train-hack-featured-1.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
 }
 
 .container {
-margin-top: 30px;
+  margin-top: 30px;
 }
 
 .row {
-    margin-bottom: 15px;
-    line-height: 25px;
-    background: rgba(245, 247, 245, 0.6);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 1px 2px #666666;
+  margin-bottom: 15px;
+  line-height: 25px;
+  background: rgba(245, 247, 245, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px #666666;
 }
 
 .col-lg-12 {
-    font-size: 16px;
-    color: 51719a;
-    margin-bottom: 10px;
-    text-align: left;
-    font-family: 'Acme', sans-serif;
+  font-size: 16px;
+  color: 51719a;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: "Acme", sans-serif;
 }
